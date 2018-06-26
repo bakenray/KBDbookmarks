@@ -32,7 +32,7 @@ main #mainBody kbd{
     text-transform: uppercase;
     position: relative;
     line-height:2.5em;
-    margin:6px;
+    margin: 6px 4px;
     font-family: sans-serif;
     background:linear-gradient(#7b7b7b,#101010);
     color:#fff;
