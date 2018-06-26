@@ -78,8 +78,6 @@ main #mainBody kbd img{
     position: absolute;
     bottom: 4px;
     left: 4px;
-    background: #bfbfbf;
-    border: 1px solid #dbdbdb;
     width:16px;
     height:16px;
     border-radius: 50%;
