@@ -7,67 +7,67 @@ var keys = {
     'length':5
 } 
 var hash = {
-    '`' : 'qq.com',
-    '1' : 'qq.com',
-    '2' : 'qq.com',
-    '3' : 'qq.com',
-    '4' : 'qq.com',
-    '5' : 'qq.com',
-    '6' : 'qq.com',
-    '7' : 'qq.com',
-    '8' : 'qq.com',
-    '9' : 'qq.com',
-    '0' : 'qq.com',
-    '-' : 'qq.com',
-    '=' : 'qq.com',
-    '←' : 'qq.com',
-    'tab' : 'qq.com',
+    '`' : '',
+    '1' : '',
+    '2' : '',
+    '3' : '',
+    '4' : '',
+    '5' : '',
+    '6' : '',
+    '7' : '',
+    '8' : '',
+    '9' : '',
+    '0' : '',
+    '-' : '',
+    '=' : '',
+    '←' : '',
+    'tab' : '',
     'q' : 'qq.com',
     'w' : 'weibo.com',
     'e' : 'ele.me',
-    'r' : 'qq.com',
+    'r' : '',
     't' : 'taobao.com',
     'y' : 'youdao.com',
     'u' : 'ui.cn',
     'i' : 'iqiyi.com',
     'o' : 'oschina.net',
     'p' : 'pinterest.com',
-    '[' : 'qq.com',  
-    ']' : 'qq.com',
-    '＼' : 'qq.com', 
-    'capslock' : 'qq.com',
+    '[' : '',  
+    ']' : '',
+    '＼' : '', 
+    'capslock' : '',
     'a' : 'acfun.cn',  
-    's' : 'qq.com',
-    'd' : 'qq.com',  
-    'f' : 'qq.com',
+    's' : '',
+    'd' : '',  
+    'f' : '',
     'g' : 'github.com', 
-    'h' : 'qq.com',
+    'h' : '',
     'j' : 'juejin.im',  
-    'k' : 'qq.com',  
-    'l' : 'qq.com',
-    ';' : 'qq.com',  
-    '"' : 'qq.com',
-    'enter' : 'qq.com', 
-    'shift' : 'qq.com',
+    'k' : '',  
+    'l' : '',
+    ';' : '',  
+    '"' : '',
+    'enter' : '', 
+    'shift' : '',
     'z' : 'zcool.com.cn',  
-    'x' : 'qq.com',
-    'c' : 'qq.com', 
+    'x' : '',
+    'c' : '', 
     'v' : 'v2ex.com',
     'b' : 'behance.net',           
-    'n' : 'qq.com',
+    'n' : '',
     'm' : 'developer.mozilla.org',  
-    ',' : 'qq.com',
-    '.' : 'qq.com', 
-    '/' : 'qq.com',
-    'shift' : 'qq.com',  
-    'ctrl' : 'qq.com',
-    'win' : 'qq.com',  
-    'alt' : 'qq.com',
-    'blank' : 'qq.com', 
-    'alt' : 'qq.com',
-    'win' : 'qq.com',  
-    'book' : 'qq.com',
-    'ctrl' : 'qq.com',  
+    ',' : '',
+    '.' : '', 
+    '/' : '',
+    'shift' : '',  
+    'ctrl' : '',
+    'win' : '',  
+    'alt' : '',
+    'blank' : '', 
+    'alt' : '',
+    'win' : '',  
+    'book' : '',
+    'ctrl' : '',  
 }
 
 hashInlocalStorage = JSON.parse(localStorage.getItem('HILS') || 'null')
@@ -99,9 +99,19 @@ for(var index1 =0; index1 <keys['length']; index1++){
             localStorage.setItem('HILS',JSON.stringify(hash)) //每点击一次btn，就把修改后的hash保存在localStorage中
             //console.log(hash);
         }
-
         var icons =document.createElement('img');//创建一个img标签
-        icons.src= "http://" + hash[rowLen[index2]]+'/favicon.ico'; //给img便签添加src
+        if(hash[rowLen[index2]] ){ 
+            icons.src= "http://" + hash[rowLen[index2]]+'/favicon.ico'; //给img便签添加src
+        }
+        else{
+            icons.src= '../images/none.png';
+        }
+
+        icons.onerror=function(img){  //如果图片获取失败，则执行函数
+            img.target.src = '../images/none.png';
+            console.log('获取ico失败~');
+        }
+
         kbd.appendChild(icons); //把img标签添加到kbd便签下
     }
 }

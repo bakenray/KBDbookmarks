@@ -69,7 +69,6 @@ main #mainBody kbd button{
     color: #181818;
     border-radius: 2px;
     cursor: pointer;
-
 }
 main #mainBody kbd:hover button{
     display: block;
