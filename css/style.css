@@ -4,35 +4,59 @@ a{text-decoration:none;}
 body{
     background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+ 
 }
 main{
     text-align: center;
-    padding:250px 0;
 }
 #mainBody{
     background:rgba(0,0,0,.5);
     border-radius:8px;
     display: inline-block;
-    padding:40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+    padding:30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
     border: 1px solid #5e5e5e;
+    text-align: left;
 }
 main #mainBody kbd{
     display: inline-block;
-    width:4em;
-    height:4em;
+    font-size: 14px;
+    width: 5em;
+    height: 4.5em;
+    text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
     position: relative;
-    line-height:3em;
+    line-height:2.5em;
     margin:6px;
+    font-family: sans-serif;
     background:linear-gradient(#7b7b7b,#101010);
     color:#fff;
     border-radius:4px;
-    box-shadow: 0 4px 0 #7f7f7f, -1px 0 0 #646464, 1px 0 0 #646464;
-
+    border: 1px solid #858585;
+    box-shadow: 
+    0 1px 0 1px #7f7f7f, 
+    -1px -1px 0 0px #646464, 
+    1px 0 0 #646464, 
+    0 5px 0 0 #c7c7c7,
+    0 8px 10px #3d3d3d
 }
+main #mainBody div:first-child kbd:last-child{ width:7em;}
+main #mainBody div:nth-child(2) kbd:first-child{width:6.5em;}
+main #mainBody div:nth-child(2) kbd:last-child{width:5.5em;}
+main #mainBody div:nth-child(3) kbd:first-child{width:8.5em;}
+main #mainBody div:nth-child(3) kbd:last-child{width:9.5em;}
+main #mainBody div:nth-child(4) kbd:first-child{width:11em;}
+main #mainBody div:nth-child(4) kbd:last-child{width:13em;}
+main #mainBody div:nth-child(5) kbd{width:6em;}
+main #mainBody div:nth-child(5) kbd:first-child{width:6.5em;}
+main #mainBody div:nth-child(5) kbd:last-child{width:6.5em;}
+main #mainBody div:nth-child(5) kbd:nth-child(4){width:35em;}
+
 main #mainBody kbd button{
     position: absolute;
     bottom: 2px;
@@ -50,4 +74,13 @@ main #mainBody kbd button{
 main #mainBody kbd:hover button{
     display: block;
 }
-
+main #mainBody kbd img{
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    background: #bfbfbf;
+    border: 1px solid #dbdbdb;
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+}
