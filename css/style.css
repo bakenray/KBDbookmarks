@@ -46,16 +46,16 @@ main #mainBody kbd{
     0 8px 10px #3d3d3d
 }
 main #mainBody div:first-child kbd:last-child{ width:7em;}
-main #mainBody div:nth-child(2) kbd:first-child{width:6.5em;}
+main #mainBody div:nth-child(2) kbd:first-child{width:6.4em;}
 main #mainBody div:nth-child(2) kbd:last-child{width:5.5em;}
-main #mainBody div:nth-child(3) kbd:first-child{width:8.5em;}
+main #mainBody div:nth-child(3) kbd:first-child{width:8.2em;}
 main #mainBody div:nth-child(3) kbd:last-child{width:9.5em;}
-main #mainBody div:nth-child(4) kbd:first-child{width:11em;}
+main #mainBody div:nth-child(4) kbd:first-child{width:10.5em;}
 main #mainBody div:nth-child(4) kbd:last-child{width:13em;}
 main #mainBody div:nth-child(5) kbd{width:6em;}
 main #mainBody div:nth-child(5) kbd:first-child{width:6.5em;}
 main #mainBody div:nth-child(5) kbd:last-child{width:6.5em;}
-main #mainBody div:nth-child(5) kbd:nth-child(4){width:35em;}
+main #mainBody div:nth-child(5) kbd:nth-child(4){width:33.4em;}
 
 main #mainBody kbd button{
     position: absolute;
