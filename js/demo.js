@@ -10,7 +10,6 @@ generateKeyboard(keys,hash);
 listenToUser(hash);
 
 //工具函数
-
 function getFormLocalStorage(name){  //getFormLocalStorage()函数
      return JSON.parse(localStorage.getItem(name) || 'null')
 }
@@ -75,7 +74,7 @@ function init(){ //初始化函数
         'q' : 'qq.com',
         'w' : 'weibo.com',
         'e' : 'ele.me',
-        'r' : '',
+        'r' : 'ruanyifeng.com',
         't' : 'taobao.com',
         'y' : 'youdao.com',
         'u' : 'ui.cn',
@@ -87,24 +86,24 @@ function init(){ //初始化函数
         '＼' : '', 
         'capslock' : '',
         'a' : 'acfun.cn',  
-        's' : '',
-        'd' : '',  
-        'f' : '',
+        's' : 'sogou.com',
+        'd' : 'dribbble.com',  
+        'f' : 'facebook.com',
         'g' : 'github.com', 
-        'h' : '',
+        'h' : 'hybridworks.jp',
         'j' : 'juejin.im',  
-        'k' : '',  
-        'l' : '',
+        'k' : 'jobbole.com',  
+        'l' : 'logodashi.com',
         ';' : '',  
         '"' : '',
         'enter' : '', 
         'shift' : '',
         'z' : 'zcool.com.cn',  
-        'x' : '',
-        'c' : '', 
+        'x' : 'xuehui.com',
+        'c' : 'cdc.tencent.com', 
         'v' : 'v2ex.com',
         'b' : 'behance.net',           
-        'n' : '',
+        'n' : 'nodyoung.com',
         'm' : 'developer.mozilla.org',  
         ',' : '',
         '.' : '', 

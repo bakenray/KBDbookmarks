@@ -34,16 +34,16 @@ main #mainBody kbd{
     line-height:2.5em;
     margin: 6px 4px;
     font-family: sans-serif;
-    background:linear-gradient(#7b7b7b,#101010);
+    background:linear-gradient(#505050,#101010);
     color:#fff;
     border-radius:4px;
     border: 1px solid #858585;
     box-shadow: 
-    0 1px 0 1px #7f7f7f, 
-    -1px -1px 0 0px #646464, 
-    1px 0 0 #646464, 
-    0 5px 0 0 #c7c7c7,
-    0 8px 10px #3d3d3d
+    0 1px 0 0 #868686, 
+    -1px -1px 0 0px #797979, 
+    1px 0 0 #9c9c9c, 
+    0 5px 0 0 #c7c7c7, 
+    0 8px 10px #3d3d3d;
 }
 main #mainBody div:first-child kbd:last-child{ width:7em;}
 main #mainBody div:nth-child(2) kbd:first-child{width:6.4em;}
